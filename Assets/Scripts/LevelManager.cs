@@ -9,7 +9,8 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Invoke("LoadNextLevel",autoLoadNextSceneAfter);
+		if(autoLoadNextSceneAfter != 0)
+			Invoke("LoadNextLevel",autoLoadNextSceneAfter);
 	}
 	
 	// Update is called once per frame
