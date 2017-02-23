@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{A7098599-1763-05FB-7183-8910A4BDADA2}") = "glitchgarden", "Assembly-CSharp.csproj", "{AD0A403F-7E45-207A-29E0-5241CE1B18D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD0A403F-7E45-207A-29E0-5241CE1B18D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0A403F-7E45-207A-29E0-5241CE1B18D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0A403F-7E45-207A-29E0-5241CE1B18D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0A403F-7E45-207A-29E0-5241CE1B18D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

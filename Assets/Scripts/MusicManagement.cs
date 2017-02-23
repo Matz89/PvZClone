@@ -23,6 +23,10 @@ public class MusicManagement : MonoBehaviour {
 		
 	}
 
+	public void ChangeVolume(float value){
+		audioSource.volume = value;
+	}
+
 	void OnEnable(){
 		SceneManager.sceneLoaded += OnLevelFinishedLoading;
 	}
