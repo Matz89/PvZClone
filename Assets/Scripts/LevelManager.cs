@@ -8,9 +8,13 @@ public class LevelManager : MonoBehaviour {
 	public float autoLoadNextSceneAfter;
 
 	// Use this for initialization
-	void Start () {
-		if(autoLoadNextSceneAfter != 0)
-			Invoke("LoadNextLevel",autoLoadNextSceneAfter);
+	void Start ()
+	{
+		if (autoLoadNextSceneAfter <= 0) {
+			Debug.LogWarning("Attempted to load in negative time");
+		} else {
+			Invoke ("LoadNextLevel", autoLoadNextSceneAfter);
+		}
 	}
 	
 	// Update is called once per frame
