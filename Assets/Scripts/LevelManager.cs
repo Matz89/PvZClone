@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
 
 	public float autoLoadNextSceneAfter;
+	public bool gotoWinAfterLevel = false;
 
 	// Use this for initialization
 	void Start ()
@@ -33,6 +34,8 @@ public class LevelManager : MonoBehaviour {
 
 	public void LoadNextLevel ()
 	{
+		if(gotoWinAfterLevel)
+			SceneManager.LoadScene("Win");
 		print("Loading Scene");
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}

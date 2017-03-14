@@ -6,8 +6,11 @@ using UnityEngine;
 public class Attacker : MonoBehaviour {
 
 	private float currentSpeed;
+	[Tooltip ("Average number of seconds between spawns")]
+	public float seenEverySeconds;
 	private GameObject currentTarget;
 	private Animator anim;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +22,7 @@ public class Attacker : MonoBehaviour {
 		transform.Translate(Vector3.left * currentSpeed  * Time.deltaTime);
 		if(!GetTarget())
 			anim.SetBool ("isAttacking", false);
+
 
 	}
 

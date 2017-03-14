@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour {
 
+	private StarDisplay starDisplay;
+
+	public int starCost = 100;
 	// Use this for initialization
 	void Start () {
-		
+		starDisplay = GameObject.FindObjectOfType<StarDisplay>();
 	}
 	
 	// Update is called once per frame
@@ -15,6 +18,9 @@ public class Defender : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(){
-		Debug.Log(name + " trigger entered");
+	}
+
+	public void AddStars(int numStars){
+		starDisplay.AddStars(numStars);
 	}
 }
